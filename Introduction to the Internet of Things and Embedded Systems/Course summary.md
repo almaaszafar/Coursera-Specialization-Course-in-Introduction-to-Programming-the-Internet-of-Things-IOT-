@@ -2,9 +2,8 @@
 
    #  *ALMAAS ZAFAR*
    
-    #   EASY CONNECTIONS
+   #             EASY CONNECTIONS
     
-    Definitions
 « Thing »
 « Thing » + Computational intelligence = Embedded System
 « Thing » + Computational intelligence + Network Connection = IoT
