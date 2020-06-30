@@ -30,3 +30,21 @@ Sensors (Input) -> ADC -> µC (IP+FPGA) -> DAC -> Actuators (Output)
 - Outputs (Actuators)
 
 - Bread board
+
+#    µC characteristics  
+
+- Datapath Bitwidth
+
+- Input/Output pins
+
+- Performance (Clock rate = Seconds / Cycle)
+
+- Timers (Real time)
+
+- ADC
+
+- DAC
+
+- Low power nodes
+
+- Communication protocols
