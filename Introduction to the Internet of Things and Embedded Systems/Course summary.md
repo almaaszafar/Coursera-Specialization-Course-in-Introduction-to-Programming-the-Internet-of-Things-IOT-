@@ -48,3 +48,22 @@ Sensors (Input) -> ADC -> µC (IP+FPGA) -> DAC -> Actuators (Output)
 - Low power nodes
 
 - Communication protocols
+
+#  µC components  
+
+- Storage elements (Speed, cost)
+
+- Registers (Stores a single value): Special-purpose registers, General-purpose registers
+
+- Register file REG: a set of registers
+
+- Cache memory:
+  - Slower than REG
+  - Cheaper than REG
+  - Instruction cache + Data cache
+  
+- Main memory:
+  - Slower than cache, CPU
+  - Cheaper than cache
+  - Not in CPU (Connected via bus)
+  
