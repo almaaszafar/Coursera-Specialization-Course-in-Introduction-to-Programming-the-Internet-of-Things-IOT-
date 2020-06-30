@@ -67,3 +67,37 @@ Sensors (Input) -> ADC -> µC (IP+FPGA) -> DAC -> Actuators (Output)
   - Cheaper than cache
   - Not in CPU (Connected via bus)
   
+#  Compilation & Interpretation 
+
+ Machine language: Binary (001)
+ 
+• Assembly language: Mnemonics (add r0,r1,r2)
+
+• High language: C, C++,Kotlin,JS....
+
+- Compilation: Translate instructions once before running the code (C, C++)
+ -> Translation only once -> Saves time
+ 
+- Interpretation: Translate while code is executed (Python)
+-> Translation occurs every execution -> Can adapt to runtime situation
+
+* User <-> Application <-> OS <-> Hardware
+* Arduino -> No OS ; Raspberry -> With OS
+
+
+#   Networking with IOT 
+
+- LAN: Ethernet
+* Switch: Smart device that transmits data
+
+* Hub: Dumb device that transmits data (Possibility of collision)
+
+- WAN: Internet
+   * Routers: From LAN to WAN
+   
+- MANET (Mobile Ad Hoc Net): WiFi
+   * Access point + Mobile / Wireless devices
+   
+- Protocols: Rules of communication
+
+- Encapsulation: Separation at different layers
