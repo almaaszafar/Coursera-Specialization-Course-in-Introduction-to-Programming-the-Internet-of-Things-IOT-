@@ -13,7 +13,7 @@ Sensors (Input) -> ADC -> µC (IP+FPGA) -> DAC -> Actuators (Output)
 • IP: Intellectual Property core (1 function)
 • FPGA: Field Programmable Gate Array (Hardware reconfiguration via RAM – Rewiring)
 
-- General Purpouse Processors (Many features)
+- General Purpose Processors (Many features)
 
 - Digital Signal Processors (Specific features)
  IC: Integrated Circuit (Small electronic device)
@@ -90,7 +90,7 @@ Sensors (Input) -> ADC -> µC (IP+FPGA) -> DAC -> Actuators (Output)
 - LAN: Ethernet
 * Switch: Smart device that transmits data
 
-* Hub: Dumb device that transmits data (Possibility of collision)
+* Hub: A dunce device that transmits data (There may be possibility of network collision)
 
 - WAN: Internet
    * Routers: From LAN to WAN
