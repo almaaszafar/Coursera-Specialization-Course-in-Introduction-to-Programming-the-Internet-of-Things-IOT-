@@ -17,3 +17,16 @@ Sensors (Input) -> ADC -> µC (IP+FPGA) -> DAC -> Actuators (Output)
 
 - Digital Signal Processors (Specific features)
  IC: Integrated Circuit (Small electronic device)
+
+
+#    Components of Embedded Systems
+
+- Development board (Arduino, Raspberry…)
+
+- Connectors (USB, Ethernet…)
+
+- Inputs (Sensors: Simple / Complex)
+
+- Outputs (Actuators)
+
+- Bread board
