@@ -7,5 +7,4 @@ This Specialization covers basic embedded systems, the Raspberry Pi Platform, an
 https://www.coursera.org/specializations/iot
 
 
-#  *AlMAAS ZAFAR   
-YEAR 2020
+# REPOSITORY BY  *ALMAAS ZAFAR   
