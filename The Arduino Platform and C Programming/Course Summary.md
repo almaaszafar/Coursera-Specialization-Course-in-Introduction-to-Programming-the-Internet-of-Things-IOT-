@@ -90,4 +90,19 @@ analogRead(analogPin)   #returns 0 to 1023 (integers) -> 0 to 5V
 *-> Embedded debug interface (in processor) *-> Hardware
 
 *-> Serial protocols (communication protocol between devices to debug with in Arduino, UART)
+
+
+#  UART
+
+UART (Universal Asynchronous Receiver/Transmitter)
+
+   -> Used by modems to communicate with network
+ 
+Parallel IN -> Tx (Serialized) -> Serial OUT = Serial IN -> Rx (Deserialized) ->
+Parallel OUT
+
+*Buffer Transmit/Receive: Table that groups everything transmitted/received
+
+Baud rate: Number of transition per second 𝑓 =  1/T (in bps: bauds per second)
+
  
