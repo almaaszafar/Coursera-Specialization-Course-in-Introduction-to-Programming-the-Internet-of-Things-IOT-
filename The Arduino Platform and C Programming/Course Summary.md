@@ -52,3 +52,21 @@ Sketch = Program
   R / W                |              R (ADC)
 
   0-13 pins            |              A0-A5 pin
+  
+  
+  #   IDE 
+  
+void setup()  #Initialization (Executed 1 time)
+
+void loop()   #While power is on, loop
+
+pinMode(pin,MODE)   #Setup, MODE=INPUT; OUTPUT ; INPUT_PULLUP
+
+digitalRead(pin)    #returns 0 or 1
+
+digitalWrite(pin,VALUE)   #VALUE=HIGH; LOW / 0;1
+
+analogRead(analogPin)   #returns 0 to 1023 (integers) -> 0 to 5V
+
+ INPUT_PULLUP:  INPUT + Reverse polarity
+ 
