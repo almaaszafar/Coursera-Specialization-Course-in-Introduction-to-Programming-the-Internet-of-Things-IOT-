@@ -108,4 +108,25 @@ Baud rate: Number of transition per second 𝑓 =  1/T (in bps: bauds per second
 Start bit=0   --------  Data 8 bits   ------  Parity bit    ------  Stop bit=1 (1 or 2)
 
 
+>  Start & Stop bits have a specific duration to be recognized (≥ T(baud) / 2 )
+
+> Bit duration: Tbaud : Each bit is sent in a fixed duration
+
+>The duration must be know to Tx and Rx
+
+>Transmission rate is less than baud rate
+
+> Parity bit: Bit to check errors
+ 
+> Even parity: Number of 1’s is even
+
+> Odd parity: Number of 1’s is odd
+
+**Error -> Retransmission
+
+Transmission efficiency: 8/11 = 73% (Send 11 bits to really send 8 bits)
+
+Data throughput= Transmission rate= baud rate    x    transmission efficiency
+
+
  
