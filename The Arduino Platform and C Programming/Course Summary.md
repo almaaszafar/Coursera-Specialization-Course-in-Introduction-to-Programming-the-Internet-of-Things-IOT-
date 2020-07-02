@@ -105,4 +105,7 @@ Parallel OUT
 
 Baud rate: Number of transition per second 𝑓 =  1/T (in bps: bauds per second)
 
+Start bit=0   --------  Data 8 bits   ------  Parity bit    ------  Stop bit=1 (1 or 2)
+
+
  
