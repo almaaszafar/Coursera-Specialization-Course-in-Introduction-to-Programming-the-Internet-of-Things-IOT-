@@ -70,3 +70,24 @@ analogRead(analogPin)   #returns 0 to 1023 (integers) -> 0 to 5V
 
  INPUT_PULLUP:  INPUT + Reverse polarity
  
+ 
+ #  DEBUGGING
+ 
+*- Controllability: Inputs / Internal memory
+
+*- Observability: Outputs / Internal memory
+
+    ->  Testing & Debugging
+
+*-Run control of the forget (stop)               } Debugging
+
+*- Real time monitoring of target execution      } Debugging
+
+*- Timing & functional accuracy                  } Debugging
+
+*-> Remote debugger (debug monitor, maintains communication link #break;) *-> Software
+
+*-> Embedded debug interface (in processor) *-> Hardware
+
+*-> Serial protocols (communication protocol between devices to debug with in Arduino, UART)
+ 
