@@ -129,4 +129,22 @@ Transmission efficiency: 8/11 = 73% (Send 11 bits to really send 8 bits)
 Data throughput= Transmission rate= baud rate    x    transmission efficiency
 
 
+
+ #   SERIAL COMMUNICATION
+ 
+-> UART: Protocol Arduino – USB (Debugging with serial monitor)
+
+-> Serial.begin(baudrate#9600,#config) // Setup
+
+-> Serial.print(“text”/code ASCII) // Write from Arduino to serial monitor
+
+-> Serial.write(value)
+
+-> Serial.available() // How many bytes are waiting in the buffer #while (Serial.available() == 0);
+
+-> Serial.readBytes()   //  Reads bytes from the buffer
+
+-> Serial.read()  // Read from serial monitor
+
+**-1 if no data is available
  
