@@ -39,3 +39,12 @@ Code -> Combine & Transform -> Compile -> Link (+Libraries) -> Hex File Creation
 Another machine (avr for ATmega)
 
 Sketch = Program
+
+
+   #  DIGITAL VS ANALOG
+   
+   Digital                              Analog
+**   Integers                          Continuous
+**  0 or 5V                            0 to 5V (0 to 1023)
+**  R / W                              R (ADC)
+**  0-13 pins                          A0-A5 pin
