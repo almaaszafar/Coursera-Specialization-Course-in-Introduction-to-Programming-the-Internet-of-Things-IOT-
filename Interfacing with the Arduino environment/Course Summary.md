@@ -209,29 +209,47 @@ PS: Routers – DHCP / Servers – Static IP@
 * Servers receives data
 
 EthernetServer server= EthernetServer(80);
+
 void Setup() {
+
 Ethernet.begin(mac,ip,gateway,subnet);
+
 server.begin();
+
 }
+
 void loop() {
+
 EthernetClient client= server.available ();
+
 if (client) { 
-       Serial.print(client.read());
-      }
-    }  
+
+Serial.print(client.read());
+
+   }
+
+}  
     
 * Client sends data 
 
 byte Mac []= {0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED};
+
 char server[]= "eduvue.edu"
+
 EthernetClient client;
+
 void setup() {
-          Ethernet.begin(mac);
-          if (client.connect (server, 80)) {
-          client.println("GET index.html HTTP/1.1");
-          client.stop();
-          }
-        }  
+
+Ethernet.begin(mac);
+
+if (client.connect (server, 80)) {
+
+   client.println("GET index.html HTTP/1.1");
+
+   client.stop();
+
+   }
+ }  
 
 
   # WIFI SHIELD
