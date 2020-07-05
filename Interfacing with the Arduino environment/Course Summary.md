@@ -70,3 +70,32 @@ EEPROM: Electronically Erasable Programmable Read Only Memory
 * EEPROM.read(address 1 byte 0->1023)
 
 * EEPROM.write(address, data 1 byte)
+
+
+#  I2C COMMUNICATION
+
+* Serial protocol -> 1 wire, 1 bit at a time -> Saves pins
+
+* Synchronous protocol -> Shares same clock
+
+-> Master: Who starts the communication
+
+-> Slave: Who receives the communication
+
+• Bit width fixed: 2 bits
+– 1 bit for data signal
+– 1 bit for clock signal
+
+• 2 Wires:
+– SDA: Serial Data
+– SCL: Serial Clock
+
+o Transaction:
+
+   o Write
+
+   o Read
+
+-> Transmitter: Places data on the bus
+
+-> Receiver: Read data from the bus
