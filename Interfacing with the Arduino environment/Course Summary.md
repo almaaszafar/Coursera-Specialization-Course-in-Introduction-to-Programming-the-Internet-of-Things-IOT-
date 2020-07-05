@@ -46,6 +46,27 @@ EXP: Accelerometer (2D) ; Gyroscope (3D)
 
 * Example: 50% – Duty cycle: Half the time 1, Half the time 0 -> Give 2,5V
 
-`EXP: Buzzer – tone(pin, frequency in Hz, duration in ms) #Generate square wave; Fixed duty
+Buzzer – tone(pin, frequency in Hz, duration in ms) #Generate square wave; Fixed duty
 
 cycle 50% -> notone()
+
+
+#  EEPROM
+
+EEPROM: Electronically Erasable Programmable Read Only Memory
+
+• Non volatile memory
+
+• Writes a single byte at a time (Similar to flash memory)
+
+• 1k bytes for Arduino
+
+• Masking: Process to store data of 2 bytes (1’s in the bits we interested in and 0’s)
+
+• PS: 0xFF is a mask for 255
+
+* #include<EEPROM.h>
+
+* EEPROM.read(address 1 byte 0->1023)
+
+* EEPROM.write(address, data 1 byte)
