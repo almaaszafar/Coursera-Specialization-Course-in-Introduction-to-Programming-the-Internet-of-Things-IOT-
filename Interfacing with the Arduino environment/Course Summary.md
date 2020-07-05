@@ -183,3 +183,75 @@ PS: Routers – DHCP / Servers – Static IP@
 * #include<Ethernet.h> 
 
 * Ethernet.begin(@Mac*, @IP, DNS, Gateway, Subnet mask)
+
+     #  ETHERNET SHIELD
+
+   * EthernetClient client #Create a client object 
+
+   * client.connect(@IP / DNS, port) #returns 1 if ✓ 
+
+   * client.stop() 
+
+   * client.print(data) 
+
+   * client.write(byte) 
+
+   * client.read() 
+
+   * client.available()
+
+   * EthernetServer server=EthernetServer(port) #Create a server object; before setup 
+
+   * EthernetClient client=server.available()
+
+# Servers and Clients data codes
+
+* Servers receives data
+
+EthernetServer server= EthernetServer(80);
+void Setup() {
+Ethernet.begin(mac,ip,gateway,subnet);
+server.begin();
+}
+void loop() {
+EthernetClient client= server.available ();
+if (client) { 
+       Serial.print(client.read());
+      }
+    }  
+    
+* Client sends data 
+
+byte Mac []= {0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED};
+char server[]= "eduvue.edu"
+EthernetClient client;
+void setup() {
+          Ethernet.begin(mac);
+          if (client.connect (server, 80)) {
+          client.println("GET index.html HTTP/1.1");
+          client.stop();
+          }
+        }  
+
+
+  # WIFI SHIELD
+
+WiFi.begin(ssid,pass°,keyindex*,key*) #ssid=network ; pass type=WPA-2°, WEP*
+
+• WiFiClient client#Create a client object 
+
+• client.connect(ip,port) 
+
+• client.stop() 
+
+  o WiFiServer server(port)#create a server object 
+
+  o server.begin() 
+
+* WiFi.scanNetworks() #returns the number of available networks 
+
+* WiFi.SSID(i) #returns ssid of the i’th network 
+
+* WiFi.RSSI(i) #returns the strength of the i’th network (-80  0) 
+
+* WiFi.encryptionType() #0 WEP ; 1 WPA-1 ; 2 WPA-2 ; 3 None
