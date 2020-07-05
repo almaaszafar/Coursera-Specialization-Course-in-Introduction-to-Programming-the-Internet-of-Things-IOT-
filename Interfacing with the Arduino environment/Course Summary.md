@@ -104,5 +104,22 @@ o Transaction:
 
 -> Receiver: Read data from the bus
 
-#                                  ------------------------------------ MESSAGE -----------------------------------
+#                       ----------------------------- MESSAGE -------------------------
 # START(start condition) -> 7 or 10 bits (address frame) -> Read/Write Bit -> ACK/NACK Bit ->  8 Bits (data frame) -> ACK/NACK Bit ->  8 Bits (data frame) -> ACK/NACK Bit -> Stop (stop condition)
+
+
+• SCL – Example of 1 clock pulse
+
+• SDA – Can be both 0 and 1
+
+  o Cross in SDA – SDA changes value
+
+  o The sender has to apply a value of SDA before SCL goes HIGH and hold it while SCL is HIGH
+   and that is the value that is going to be on the bus.
+
+  o Acknowledge bit: After every byte the receiver sends an ack bit: SDA = 0 : Message received
+
+
+#include<Wire.h>
+
+Wire.begin() #No argument = Master ; #Addr(0->127) = Slave
