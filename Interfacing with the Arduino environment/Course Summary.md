@@ -123,3 +123,63 @@ o Transaction:
 #include<Wire.h>
 
 Wire.begin() #No argument = Master ; #Addr(0->127) = Slave
+
+   # Master communication (Write): 
+
+1. Wire.beginTransmission(@Slave) #Start the transmission 
+
+2. Wire.write(data) 
+
+3. Wire.endTransmission() #Returns 0 for success 
+
+* Whole data is put into a buffer before being sent.
+
+   # Master communication (Read): 
+
+* Wire.requestFrom (@Slave,Nb of bytes to read, X) #X=Stop arg to release the bus after(optional) #Specify a read transaction
+
+* Wire.read() #Returns a single byte from the receiver buffer 
+
+* Wire.available() #Returns number of bytes waiting
+
+   #  Slave operation:
+   
+PS: Slave cannot initiate for transmission : must wait. 
+
+* Problem  -> Busy wait: loops to check if there is transaction 
+
+* Solution ->  Call back functions: functions called when an event occurs “transmission is received” 
+
+-> Wire.onRecieve(funcName) #Master: Write Transaction 
+
+-> Wire.onRequest(funcName) #Master: Read Request 
+
+ * Exp: void recieveFunction(int bytesRecieved) #1 argument 
+ 
+ * Exp: void transmitFunction(void) 
+ 
+#  SHIELDS –ETHERNET SHIELD
+
+Shield = Printed Circuit Board (PCB) -> Adds functionality to Arduino 
+
+• Hardware: Circuit prewired (same size as Arduino) 
+
+• Software: Library associated to IDE 
+
+Exp: Ethernet shield ; 
+
+* MAC address : Unique – 6 bytes long 
+
+* IP address : Changeable – 4 bytes long 
+
+* Port : Application protocol – 2 bytes long ; Exp: Port 80 (for Internet) 
+
+* DNS: Domain Name Server -> Match between IP@ and URL 
+
+* DHCP: Dynamic Host Connection Protocol -> Gives an IP@ dynamically | Static IP@ 
+
+PS: Routers – DHCP / Servers – Static IP@ 
+
+* #include<Ethernet.h> 
+
+* Ethernet.begin(@Mac*, @IP, DNS, Gateway, Subnet mask)
