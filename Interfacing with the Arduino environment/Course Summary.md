@@ -83,11 +83,15 @@ EEPROM: Electronically Erasable Programmable Read Only Memory
 -> Slave: Who receives the communication
 
 • Bit width fixed: 2 bits
+
 – 1 bit for data signal
+
 – 1 bit for clock signal
 
 • 2 Wires:
+
 – SDA: Serial Data
+
 – SCL: Serial Clock
 
 o Transaction:
@@ -99,3 +103,6 @@ o Transaction:
 -> Transmitter: Places data on the bus
 
 -> Receiver: Read data from the bus
+
+#                                  ------------------------------------ MESSAGE -----------------------------------
+# START(start condition) -> 7 or 10 bits (address frame) -> Read/Write Bit -> ACK/NACK Bit ->  8 Bits (data frame) -> ACK/NACK Bit ->  8 Bits (data frame) -> ACK/NACK Bit -> Stop (stop condition)
