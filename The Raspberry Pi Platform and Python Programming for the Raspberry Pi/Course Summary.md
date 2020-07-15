@@ -87,4 +87,38 @@ ARM Processor Family:
 
 - GUI: Graphic User Interface ; File manager: Regular file interface; startx #Start the GUI
 
+##  GPIO 
+
+* Pins:
+   * Power: 3,3V (1,17) & 5V (2,4)
+   
+   * Ground: 6, 9, 14, 20, 20, 30, 39
+   
+   * GPIO: General Purpose Input Output (Only 3,3V)
+   
+   * GPMF: General Purpose Multi Function (SDA, SCL, UART, SPI)
+   
+* Import Rpi.GPIO as GPIO #Call GPIO Library
+
+* GPIO.setmode(GPIO.BOARD) #Broadway numbering (In the circle)
+
+* GPIO.setmode(GPIO.GPIO.BCM) #Broadcom numbering (In the box) (It changes from an Rpi to another)
+
+* GPIO.setup(pinNumber,mode) #mode=GPIO.OUT/GPIO.IN #pinMode
+
+* GPIO.output(pinNumber,value) #value=True/False #digitalWrite
+
+* while True #void loop{}
+
+* import time; time.sleep(numberInSeconds) #delay
+
+* value=GPIO.input(pinMode) #digitalRead
+
+** No analogRead, no analogWrite **
+
+* sudo pytho3 test.py #Execute a python script
+
+
+
+
 
