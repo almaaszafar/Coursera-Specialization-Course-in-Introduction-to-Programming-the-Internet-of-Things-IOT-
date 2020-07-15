@@ -46,9 +46,11 @@ ARM Processor Family:
 
 *  Overclocking: Increase the clock frequency -> Increase the internal voltage level (15% of processor)
 
-  -> Quicker execution of instructions (one instruction per clock)
+     * Quicker execution of instructions (one instruction per clock)
   
-  -> Signals have shorter time to travel (reduce time over a clock cycle)
+     * Signals have shorter time to travel (reduce time over a clock cycle)
   
-  -> Temperature of device increases  Shortens device life
+     * Temperature of device increases -> Shortens device life
+
+## User application -> /dev/xxx (files associated with hardware device) -> Device driver (connect files to accesses to device access) -> Hardware device
 
