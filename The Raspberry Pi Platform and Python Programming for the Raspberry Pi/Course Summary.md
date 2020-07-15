@@ -132,5 +132,34 @@ ARM Processor Family:
 
 * Frequency control: (For more accuracy)
 
-![alt text](https://pi4j.com/1.2/images/j8header-2b.png "Logo Title Text 1")
+![alt text](https://pi4j.com/1.2/images/j8header-2b.png " Raspberry pi Header ")
+
+   ## GUI-BASED PROGRAMS
+
+
+* Widgets: Visual entities you can interact with (button, menu..)
+
+* Event loop: Wait for an event  Execute (by the user) if there is an event Wait again
+
+* from Tkinter import * #Python library for widgets
+
+* root=Tk() #Create a window on the screen
+
+* root.geometry(‘widthxheight’) #Give size of geometry
+
+* c=Canvas(root,width=W,height=H) #Create a canvas
+
+* c.pack() #Make canvas appear on the screen
+
+* r=c.create_rectangle(x,y,w,h,fill=‘color’,outline=‘color’) //Create a rectangle
+
+* w=Scale(root,from_=min,to=max,orient=HORIZONTAL/VERTICAL,command=callBackFunction)
+
+* def callBackFunction(duty) #Function called when user changes scale #Duty is the value of the scale
+
+
+
+
+
+
 
