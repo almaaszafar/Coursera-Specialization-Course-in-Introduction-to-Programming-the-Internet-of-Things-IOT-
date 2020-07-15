@@ -118,7 +118,19 @@ ARM Processor Family:
 
 * sudo pytho3 test.py #Execute a python script
 
+* PWM (Pulse With Modulation)
 
+* Duty cycle = Fraction of the duration of high (of voltage)
 
+* pwm_obj=GPIO.PWM(pinNumber,frequencyInHz)
 
+* pwm_obj.start(dutyCycle) #Generate PWM to the pin #dutyCycle 0->100
+
+* pwm_obj.ChangeDutyCycle(dutyCycle)
+
+* PWM frequency is not accurate because of OS (off by over 50% at 10kHz)
+
+* Frequency control: (For more accuracy)
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
