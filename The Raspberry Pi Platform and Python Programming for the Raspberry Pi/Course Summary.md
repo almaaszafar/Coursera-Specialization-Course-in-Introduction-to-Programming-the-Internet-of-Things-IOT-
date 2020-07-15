@@ -44,8 +44,11 @@ ARM Processor Family:
 
 *  raspi-config: tool to setup different options
 
-*  Overclocking: Increase the clock frequency  Increase the internal voltage level (15% of processor)
+*  Overclocking: Increase the clock frequency -> Increase the internal voltage level (15% of processor)
+
   -> Quicker execution of instructions (one instruction per clock)
+  
   -> Signals have shorter time to travel (reduce time over a clock cycle)
+  
   -> Temperature of device increases  Shortens device life
 
