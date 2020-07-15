@@ -235,3 +235,35 @@
 ■ stream.status_filter(track=‘wordToTrack’) #Search for a word in stream
 
 ■ execfile(“filename.extension”) #Python command to execute a file
+
+    class MyStreamer(TwythonStreamer):
+          
+          def on_success(self,data):
+          
+          if 'text' in data:
+          
+              print("found it")
+              
+              
+## Camera
+ 
+■ Camera: by USB vs by CSI (Camera Serial Interface)
+
+■ sudo raspi-config->Enable camera-> Reboot Pi
+
+■ sudo apt-get install python3-picamera
+
+■ import picamera
+
+■ camera = picamera.PiCamera()//Create a camera object
+
+■ camera.capture(“nameOfImage.jpg”)//Capture an image
+
+■ camera.start_preview() ; camera.stop_preview() ;//Take a preview
+
+■ import time; camera.start_recording(“nameOfVideo.h264”)
+
+■ time.sleep(timeInSeconds); camera.stop_recording()//Create a video
+
+■ for filename in camera.capture_continuous(): time.sleep(timeInSeconds)//Take picture every sec 
+              
