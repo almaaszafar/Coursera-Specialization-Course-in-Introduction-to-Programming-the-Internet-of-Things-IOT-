@@ -52,5 +52,5 @@ ARM Processor Family:
   
      * Temperature of device increases -> Shortens device life
 
-## User application -> /dev/xxx (files associated with hardware device) -> Device driver (connect files to accesses to device access) -> Hardware device
+#### User application -> /dev/xxx (files associated with hardware device) -> Device driver (connect files to accesses to device access) -> Hardware device
 
