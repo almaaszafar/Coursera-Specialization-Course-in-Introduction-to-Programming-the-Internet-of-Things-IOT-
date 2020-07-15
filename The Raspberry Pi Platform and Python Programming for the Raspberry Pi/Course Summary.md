@@ -41,8 +41,12 @@ Lower I/O                          Voltage (3,3V)
 
 SENSIBLE                            Higher I/O Voltage (5V)
 
-| Raspberry pi    | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Raspberry pi    | Arduino           |
+| ------------- |:-------------:| 
+| OS (Libraries, Functions)      | No OS | 
+| Faster Processor (1,4GHz)     | Slower Processor (16MHz)     | 
+| 64 bit  | 8 bit      |   
+| More Memory  |  Less Memory      |  
+| Lower I/O  |  Voltage (3,3V)      |  
+| SENSIBLE  | Higher I/O Voltage (5V)      | 
+
