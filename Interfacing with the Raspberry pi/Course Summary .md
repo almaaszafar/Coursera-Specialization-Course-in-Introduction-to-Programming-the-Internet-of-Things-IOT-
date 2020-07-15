@@ -266,4 +266,31 @@
 ■ time.sleep(timeInSeconds); camera.stop_recording()//Create a video
 
 ■ for filename in camera.capture_continuous(): time.sleep(timeInSeconds)//Take picture every sec 
+
+     mysocket = socket.socket()
+     mysocket.connect(('aserver', 8000))
+     conn = mysocket.makefile('wb)
+     camera.capture(conn, 'jpeg')
+    
               
+## SERVO
+
+■ DC: Control the speed vs Servo: Control the angle
+
+■ 1 ms width = 0 degrees -> 2 ms width = 180 degrees
+
+  o For motors, we use external power supply because they consume a lot of power
+
+  o We want all the grounds to be related -> Common ground (Battery, RPie, Servo)
+
+  o Only pin 12 & 24 are PWM
+
+  o Resistor is needed between the servo and the pin for protection (1kΩ)
+
+■ pwm=GPIO.PWM(pinNumber, Frequency=50) #Set pin as PWM
+
+■ pwm.start(0) #Set duty cycle to low all the time
+
+■ pwm.ChangeDutyCycle(valueOfDutyCycle)
+
+■ Any object that is related to pin, we do a PULL UP for it
