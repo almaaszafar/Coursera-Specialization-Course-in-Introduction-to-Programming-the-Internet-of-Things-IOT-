@@ -111,36 +111,36 @@
 
 ##### code
 
-import socket
+    import socket
 
-import sys
+    import sys
 
-my sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+    my sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
-try:
+     try:
 
-   mysock.bind("",1234)
+     mysock.bind("",1234)
 
-except socket.error:
+    except socket.error:
     
-  print("Failed to bind")
+     print("Failed to bind")
     
-  sys.exit()
+     sys.exit()
  
- mysock.listen(5)
+     mysock.listen(5)
 
-while True:
+    while True:
   
-  conn,addr = mysock.accept()
+     conn,addr = mysock.accept()
   
-  data = conn.recv(1000)
+     data = conn.recv(1000)
   
-  if not data:
+     if not data:
   
-  break
+        break
   
-  conn.sendall(data)
+     conn.sendall(data)
 
-conn.close()
+     conn.close()
 
-mysock.close()
+     mysock.close()
