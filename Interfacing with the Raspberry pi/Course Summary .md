@@ -189,4 +189,49 @@
       print(data)
       
       mysock.close()
+      
        
+## Protocol-Specific Libraries
+
+■ Socket library -> Low level library -> Good for ad hoc communication (Must know protocols)
+
+■ RPie can’t handle some operations -> Need of online servers and clouds
+
+■ import http.client
+
+■ conn = httplib.HTTPConnection(“URL”)
+
+■ conn.request(“GET”,“/”) #GET=Operation; /=Directory
+
+■ Web-based services = Services in the cloud -> “HTTP” messages: Remote server x Client request
+
+■ API: Application Programming Interface -> Format of messages between client and server (Basic-HTTP)
+
+■ SDK: Software Development Kit -> Set of tools to support the use of an API (library functions)
+
+
+## Twython
+
+■ sudo apt-get update
+
+■ sudo apt-get install python –pip #PIP: Python installer for packages
+
+■ sudo pip install twython
+
+-> 4 keys for authentification
+
+■ from Twython import Twython
+
+■ #We do initialization for the 4 keys
+
+■ api=Twython(key1,key2,key3,key4)
+
+■ api.update_statuts(status=“messageToSend”) #Post a tweet
+
+■ class myStreamer (TwythonStreamer) #Extend a class and change what you want
+
+■ statuses.filter() #Search for text in streams
+
+■ stream.status_filter(track=‘wordToTrack’) #Search for a word in stream
+
+■ execfile(“filename.extension”) #Python command to execute a file
