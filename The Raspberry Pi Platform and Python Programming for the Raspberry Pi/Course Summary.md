@@ -26,3 +26,17 @@ ARM Processor Family:
   o Embedded Processors (Cortex)
 
   o Application Processors (Cortex)
+  
+  Raspberry Pi                    Arduino
+  
+OS (Libraries, Functions)           No OS
+
+Faster Processor (1,4GHz)         Slower Processor (16MHz)
+
+64 bit                              8 bit
+
+More Memory                        Less Memory
+
+Lower I/O                          Voltage (3,3V)
+
+SENSIBLE                            Higher I/O Voltage (5V)
