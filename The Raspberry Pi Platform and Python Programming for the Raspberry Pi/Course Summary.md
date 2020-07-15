@@ -132,5 +132,5 @@ ARM Processor Family:
 
 * Frequency control: (For more accuracy)
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://pi4j.com/1.2/images/j8header-2b.png "Logo Title Text 1")
 
