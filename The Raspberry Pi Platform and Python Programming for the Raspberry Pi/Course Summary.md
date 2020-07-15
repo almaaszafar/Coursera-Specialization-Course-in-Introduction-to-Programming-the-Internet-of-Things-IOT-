@@ -40,6 +40,8 @@ ARM Processor Family:
 
 *  Text-based interface (console) vs Graphic interface (desktop)
 
+### User application -> /dev/xxx (files associated with hardware device) -> Device driver (connect files to accesses to device access) -> Hardware device
+
 *  NOOBS: New Out Of Box Software  Raspbian (OS Linux-based)
 
 *  raspi-config: tool to setup different options
@@ -52,5 +54,37 @@ ARM Processor Family:
   
      * Temperature of device increases -> Shortens device life
 
-#### User application -> /dev/xxx (files associated with hardware device) -> Device driver (connect files to accesses to device access) -> Hardware device
+
+## LINUX – RASPBIAN 
+
+- Shell: Text-based user interface that executes commands
+
+- Bash (Bourne again shell): Default shell for Raspbian -> LXTerminal (vs Terminal)
+
+- man commandName #Manual of a command
+
+- pwd #Current directory
+
+- cd ( ; arg ; .. ; path) #Change directory
+
+- ls ( ; -l) #Give contents of current directory -> (d:directory,-file) (user/group/other) (rwx:read/write/execute)
+
+- Mkdir #Make directory ; rmdir ( ; -r {if not empty}) #Remove directory
+
+- nano file #Create a nano editor file (sudo apt-get install nano)
+
+- cat ; head ; last ; tail fileName #Print file content
+
+- cp originalName copyName #Copy file
+
+- mv fileName directory #Move file ; mv fileName newFileName #Rename file
+
+- sudo instruction #Switch user account to root account -> Gain the highest permission level
+
+- Processor: Execution of a program; Background processor vs Foreground processor
+
+- ps #Open task monitor ; PID: Process ID ; kill PID #End a processor ; shutdown #Close a processor
+
+- GUI: Graphic User Interface ; File manager: Regular file interface; startx #Start the GUI
+
 
